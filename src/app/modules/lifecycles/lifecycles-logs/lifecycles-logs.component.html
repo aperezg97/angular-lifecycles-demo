@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-between">
+  <h3>Lifecycle Hook Logs</h3>
+  <input type="text" [(ngModel)]="myModel.name">
+  <button mat-stroked-button color="primary" (click)="sendData()">Send data</button>
+  <button mat-stroked-button color="primary" (click)="clearLogs()">Limpiar logs</button>
+</div>
+<div>
+  <span *ngFor="let msg of hookLog" class="log d-block">{{msg}}</span>
+</div>
